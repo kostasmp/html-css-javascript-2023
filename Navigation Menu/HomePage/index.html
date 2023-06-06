@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Navigation Menu</title>
+<link rel="stylesheet" href="indexstyle.css">
+</head>
+<body>
+	<section id="navbox">
+	<nav id="menu">
+		<button id="b-one">HOME</button>
+		<button id="b-two" class="dropgames" onclick="showgames()">Games</button>
+		<div id="games" class="smallgames">
+			<a href="../Coinflip/coinindex.html">Flip The Coin</a>
+			<a href="../Dices/index.html">Roll Dices</a>
+		</div>
+		<button id="b-three" class="imgbtn" onclick="showimages()">Images</button>
+		<div id="imchoices" class="dropimages">
+			<a href="../Image Slider/index.html">Slider Show</a>
+			<a href="../Image Gallery/index.html">Show Gallery</a>
+		</div>
+			<button onclick="showmenu()" class="drop" id="b-four">Timers</button>
+			<div id="choices" class="dropchoices">
+				<a href="../Clock - Current Hour/index.html">Current Hour</a>
+				<a href="../Clock - Specific Hour/index.html">Specific Hour</a>
+			</div>
+		
+		</nav>
+</section>
+	<br>
+	<br>
+		<script src="menu.js"></script>
+</body>
+</html>

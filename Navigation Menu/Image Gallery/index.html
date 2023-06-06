@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" dir="ltr">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="stylegallery.css">
+</head>
+<body>
+
+    <section id="navmenu">
+        <nav id="menu">
+            <button id="b-one">HOME</button>
+            <button id="b-two" class="dropgames" onclick="showgames()">Games</button>
+            <div id="games" class="smallgames">
+                <a href="../Coinflip/coinindex.html">Flip The Coin</a>
+                <a href="../Dices/index.html">Roll Dices</a>
+            </div>
+            <button id="b-three" class="imgbtn" onclick="showimages()">Images</button>
+            <div id="imchoices" class="dropimages">
+                <a href="../Image Slider/index.html">Slider Show</a>
+                <a href="index.html">Show Gallery</a>
+            </div>
+            <button onclick="showmenu()" class="drop" id="b-four">Timers</button>
+                <div id="choices" class="dropchoices">
+                    <a href="../Clock - Current Hour/index.html">Current Hour</a>
+                    <a href="index.html">Specific Hour</a>
+                </div>
+            
+            </nav>
+        </section>
+
+
+    <section class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="pic1.jpg">
+                <img id="firstpic" src="pic1.jpg" alt="nature">
+            </a>
+            <p id="textone" class="desc">Nature in the Afternoon</p>
+            <button id="buttonone">Change Picture</button>
+        </div>
+    </section>
+
+    <section class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="pic2.jpg">
+                <img id="secondpic" src="pic2.jpg" alt="mnature">
+            </a>
+            <p id="texttwo" class="desc">Nature in the Morning</p>
+            <button id="buttontwo">Change Picture</button>
+        </div>
+    </section>
+
+    <section class="responsive">
+        <div class="gallery" id="galone">
+            <a target="_blank" href="pic3.jpg">
+                <img id="thirdpic" src="pic3.jpg" alt="csky">
+            </a>
+            <p id="textthree" class="desc">Night sky without stars</p>
+            <button id="buttonthree">Change the Picture</button>
+        </div>
+    </section>
+
+    <section class="responsive">
+        <div class="gallery" id="galtwo">
+            <a target="_blank" href="pic4.jpg">
+                <img id="fourthpic" src="pic4.jpg" alt="nsky">
+            </a>
+            <p id="textfour" class="desc">Night sky with stars.</p>
+            <button id="buttonfour">Change the Picture</button>
+        </div>
+    </section>
+    <div class="clearfix"></div>
+    <script src="imgscript.js"></script>
+</body>
+</html>

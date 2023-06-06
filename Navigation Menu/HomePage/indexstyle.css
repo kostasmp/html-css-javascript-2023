@@ -1,0 +1,117 @@
+body{
+	background-image: linear-gradient(#674AB3, #A348A6, #9F63C4, #9075D8, #CEA2D7);
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+
+#navmenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#b-one, #b-two, #b-three, #b-four{
+
+    width: 115px;
+    height: 50px;
+    color: whitesmoke;
+    background-color: #CEA2D7;
+    font-size: 20px;
+    text-align: center;
+}
+
+#b-one:hover, #b-two:hover, #b-three:hover, #b-four:hover{
+    background-color: #f76bfe;
+}
+
+#b-one:active, #b-two:active, #b-three:active, #b-four:active{
+    background-color: rgb(98, 42, 154);
+}
+
+
+.smallgames, .dropchoices, .dropimages {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+.smallgames a{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 60px;
+    right: 60px;
+    width: 115px;
+    height: 20px;
+    background-color: #674AB3;
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+.smallgames a:hover{
+    background-color: #f76bfe;
+    color: azure;
+}
+
+.smallgames a:active{
+    color: white;
+    background-color:#00ace6;
+}
+
+.dropchoices a{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 60px;
+    left: 180px;
+    width: 115px;
+    height: 20px;
+    background-color: #674AB3;
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+.dropchoices a:hover{
+    background-color: #f76bfe;
+    color: azure;
+}
+
+.dropchoices a:active{
+    color: white;
+    background-color:#00ace6;
+}
+
+.dropimages a{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 60px;
+    left: 60px;
+    width: 115px;
+    height: 20px;
+    background-color: #674AB3;
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+.dropimages a:hover{
+    background-color: #f76bfe;
+    color: azure;
+}
+
+.dropimages a:active{
+    color: white;
+    background-color:#00ace6;
+}
+
+.show{
+    display: block;
+}
+

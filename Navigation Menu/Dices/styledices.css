@@ -1,0 +1,163 @@
+body{
+    background-image: url(Dice\ Mat.jpg);
+}
+
+
+/*style the top nav menu */
+#navmenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+#menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.smallgames, .dropchoices, .dropimages {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+#b-one, #b-two, #b-three, #b-four{
+    width: 115px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #b300b3;
+    color: white;
+}
+
+#b-one:hover, #b-two:hover, #b-three:hover, #b-four:hover{
+    background-color: #d147a3;
+}
+
+#b-one:active, #b-two:active, #b-three:active, #b-four:active{
+    background-color: #3399ff;
+}
+
+.smallgames a{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 60px;
+    right: 60px;
+    font-size: 20px;
+    color: white;
+    background-color: #990099;
+    height: 30px;
+}
+
+.smallgames a:hover{
+    color: black;
+}
+
+.smallgames a:active{
+    color: white;
+    background-color:#00ace6;
+}
+
+.dropchoices a{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 60px;
+    left: 180px;
+    font-size: 20px;
+    color: white;
+    background-color: #990099;
+    height: 30px;
+}
+
+.dropchoices a:hover{
+    color: black;
+}
+
+.dropchoices a:active{
+    color: white;
+    background-color:#00ace6;
+}
+
+.dropimages a{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 58px;
+    left: 60px;
+    font-size: 20px;
+    color: white;
+    background-color:  #990099;
+    height: 30px;
+}
+
+.dropimages a:hover{
+    color: black;
+}
+
+.dropimages a:active{
+    color: white;
+    background-color:#00ace6;
+}
+
+.show{
+    display: block;
+}
+/*style the top nav menu ends here */
+
+
+
+/*style the dices and their buttons*/
+
+#dicebox{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    background-color: black;
+    border: 2px solid gold;
+    margin: auto;
+    font-size: 35px;
+}
+
+h2{
+    color: white;
+    font-style: italic;
+    margin: auto;
+    font-size: 30px;
+}
+
+#dicebox button{
+    background-color: #1f7a1f;
+    color: #b30000;
+    border: 3px solid black;
+    margin: auto;
+    font-size: 30px;
+}
+
+#dicebox button:hover{
+    color: #ff1a1a;
+    background-color: #29a329;
+}
+
+#dicebox button:active{
+    color: azure;
+    background-color: navy;
+}
+/*style of dices and their buttons ends here*/

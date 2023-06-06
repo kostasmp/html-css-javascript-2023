@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clock Timer</title>
+    <meta charset="utf-8" dir="ltr">
+    <link rel="stylesheet" href="styleclock.css">
+</head>
+<body>
+    <section id="navmenu">
+        <nav id="menu">
+            <button id="b-one">HOME</button>
+            <button id="b-two" class="dropgames" onclick="showgames()">Games</button>
+            <div id="games" class="smallgames">
+                <a href="../Coinflip/coinindex.html">Flip The Coin</a>
+                <a href="../Dices/index.html">Roll Dices</a>
+            </div>
+            <button id="b-three" class="imgbtn" onclick="showimages()">Images</button>
+            <div id="imchoices" class="dropimages">
+                <a href="../Image Slider/index.html">Slider Show</a>
+                <a href="../Image Gallery/index.html">Show Gallery</a>
+            </div>
+            <button onclick="showmenu()" class="drop" id="b-four">Timers</button>
+                <div id="choices" class="dropchoices">
+                    <a href="../Clock - Current Hour/index.html">Current Hour</a>
+                    <a href="index.html">Specific Hour</a>
+                </div>
+            
+            </nav>
+        </section>
+
+    <section id="timerbox">
+    <div id="timer">
+    <p id="hour">02</p><p class="semone">:</p><p id="minutes">00</p><p class="semtwo">:</p><p id="seconds">00</p>
+    </div>
+</section>
+    <section id="controlbuttons">
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <button id="reset">Reset</button>
+    </section>
+    <p id="controls">Press Start to start the timer. Stop to pause the timer.<br> 
+        To start it again, first press the reset button and <br>then the start button
+<script src="functionality.js"></script>
+</body>
+</html>
