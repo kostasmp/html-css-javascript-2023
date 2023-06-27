@@ -1,0 +1,163 @@
+body{
+    background-image: linear-gradient(#519D9E, #A7D3D4 , #83B1B2, #ffb3d9);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+h1{
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 200px;
+    
+}
+/*position the big box* and the texts*/
+
+#timer{
+    display: grid;
+    grid-template-columns: 250px 200px 250px 200px;
+    grid-template-rows: 60px 60px 60px 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+#work{
+    grid-column: 2;
+    grid-row: 4;
+    color: white;
+    display: inline-block;
+}
+
+
+#break{
+    grid-column: 4;
+    grid-row: 4;
+    margin-left: -120px;
+    display: inline-block;
+    color: white;
+}
+
+/*position the work timer*/
+#worktime{
+    display: grid;
+    grid-template-columns: 150px 100px 150px;
+    grid-template-rows: 350px 350px 250px 250px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+
+#wmins{
+    grid-column: 2;
+    grid-row: 3;
+    margin-left: 180px;
+}
+
+#sem{
+    grid-column: 2;
+    grid-row: 3;
+    margin-left: 220px;
+}
+
+#wsecs{
+    grid-column: 2;
+    grid-row: 3;
+    margin-left: 230px;
+}
+
+/*make more visible the work timer*/
+#work, #worktime{
+    font-size: 40px;
+}
+
+/*position the break timer*/
+
+#breaktime{
+    display: grid;
+    grid-template-columns: 300px 200px 350px;
+    grid-template-rows: 150px 150px 150px 250px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+}
+
+#bmins, #semtwo, #bsecs{
+    grid-column: 3;
+    grid-row: 4;
+}
+
+#bmins{
+   margin-left: 155px;
+}
+
+#semtwo{
+    margin-left: 193px;
+}
+
+#bsecs{
+    margin-left: 205px;
+}
+
+/*make more visible the break timer*/
+#break, #breaktime{
+    font-size: 40px;
+}
+
+/*position the buttons*/
+#controllers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 120px;
+    padding: 20px;
+}
+
+#start{
+    position: absolute;
+    font-size: 25px;
+    background-color: #ff66cc;
+    color: azure;
+    margin-left: 160px;
+}
+
+#homepage{
+    position: absolute;
+    font-size: 25px;
+    margin-right: 80px;
+    background-color: #ff00aa;
+    color: white;
+}
+
+#stop{
+    position: absolute;
+    margin-right: 350px;
+    font-size: 25px;
+    background-color: #3d7576;
+    color: azure;
+}
+
+#reset{
+    position: absolute;
+    margin-left: 350px;
+    font-size: 25px;
+    background-color: #72a7a7;
+    color: azure;
+}
+
+i{
+    color: white;
+    position: relative;
+    left: 50%;
+    top: 100px;
+    font-size: 30px;
+ }
+
+
+
+
+
+
