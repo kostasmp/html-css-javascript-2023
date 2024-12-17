@@ -1,0 +1,239 @@
+body{
+    background-image: linear-gradient(to bottom,#d5bbf6,#317773, #255b58, #e2d1f9);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*style the menu*/
+#navmenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.smallgames, .dropchoices, .dropimages {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+#b-one, #b-two, #b-three, #b-four{
+    width: 115px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #006080;
+    color: azure;
+}
+
+#b-one:hover, #b-two:hover, #b-three:hover, #b-four:hover{
+    background-color: #00ace6;
+}
+
+#b-one:active, #b-two:active, #b-three:active, #b-four:active{
+    background-color: #33ccff;
+}
+
+.smallgames a{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 58px;
+    right: 60px;
+    font-size: 20px;
+    color: white;
+    background-color:  #006080;
+    height: 30px;
+}
+
+.smallgames a:hover{
+    color: white;
+    background-color: #9999;
+}
+
+.smallgames a:active{
+    color: white;
+    background-color:#00ace6;
+}
+
+.dropchoices a{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 58px;
+    left: 180px;
+    font-size: 20px;
+    color: white;
+    background-color: #006080;
+    height: 30px;
+}
+
+.dropchoices a:hover{
+    color: white;
+    background-color: #9999;
+}
+
+.dropchoices a:active{
+    color: white;
+    background-color:#00ace6;
+}
+
+
+.dropimages a{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 58px;
+    left: 60px;
+    font-size: 20px;
+    color: white;
+    background-color: #006080;
+    height: 30px;
+}
+
+.dropimages a:hover{
+    color: white;
+    background-color: #9999;
+}
+
+.dropimages a:active{
+    color: white;
+    background-color:#00ace6;
+}
+
+.show{
+    display: block;
+}
+/*style of menu ends here*/
+
+
+/*style of the gallery*/
+.gallery{
+    position: relative;
+    top: 60px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    width: 90%;
+    text-align: center;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.desc{
+    padding: 15px;
+    text-align: center;
+    font-size: 16px;
+    font-family: "Lucida Handwriting", cursive;
+    font-style: italic;
+}
+
+#buttonone, #buttontwo, #buttonthree, #buttonfour{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+#textone{
+    color:#cc0099;
+}
+
+#buttonone{
+    color: black;
+    background-color:  #ff4dd2;
+}
+
+#buttonone:hover{
+    background-color: #cc0099;
+    color: #29a329;
+    font-size: 20px;
+}
+
+#texttwo{
+    color:#88ff4d;
+}
+
+#buttontwo{
+    color: #b3b300;
+    background-color: #00b33c;
+}
+
+#buttontwo:hover{
+     background-color: #009900;
+     color: #ffff1a;
+     font-size: 20px;
+}
+
+#textthree{
+    color: #3333cc;
+}
+
+#buttonthree{
+    background-color: #3939ac;
+    color: azure;
+}
+
+#buttonthree:hover{
+    background-color: #666699;
+    color: white;
+    font-size: 20px;
+}
+
+#textfour{
+    color: #538cc6;
+}
+
+#buttonfour{
+    background-color: #2e2eb8;
+    color: #ff8c1a;
+}
+
+#buttonfour:hover{
+    background-color: #1a1aff;
+    color: #ff751a;
+    font-size: 20px;
+}
+
+
+
+.responsive{
+    padding: 0 6px;
+    float: left;
+    width: 23.99999%;
+    margin-top: 100px;
+}
+
+
+@media only screen and (max-width: 700px){
+    .responsive{
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+
+    
+    .responsive{
+        width: 100%;
+    }
+}
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+/*style of the gallery ends here*/ 

@@ -1,0 +1,173 @@
+/*style the top nav menu */
+#navmenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: lightgrey;
+}
+
+#menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#b-one, #b-two, #b-three, #b-four{
+
+    width: 115px;
+    height: 50px;
+    color: darkorchid;
+    background-color: gold;
+    font-size: 20px;
+    text-align: center;
+}
+
+#b-one:hover, #b-two:hover, #b-three:hover, #b-four:hover{
+    background-color: #ff8533;
+}
+
+#b-one:active, #b-two:active, #b-three:active, #b-four:active{
+    background-color: #47d147;
+}
+
+
+.smallgames, .dropchoices, .dropimages {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+.smallgames a{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 60px;
+    right: 60px;
+    width: 115px;
+    height: 20px;
+    background-color: gold;
+    color: darkorchid;
+    font-size: 20px;
+}
+
+.smallgames a:hover{
+    color: black;
+}
+
+.smallgames a:active{
+    color: white;
+    background-color:#00ace6;
+}
+
+.dropchoices a{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 60px;
+    left: 180px;
+    width: 115px;
+    height: 20px;
+    background-color: gold;
+    color: darkorchid;
+    font-size: 20px;
+}
+
+.dropchoices a:hover{
+    color: black;
+}
+
+.dropchoices a:active{
+    color: white;
+    background-color:#00ace6;
+}
+
+.dropimages a{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 60px;
+    left: 60px;
+    width: 115px;
+    height: 20px;
+    background-color: gold;
+    color: darkorchid;
+    font-size: 20px;
+}
+
+.dropimages a:hover{
+    color: black;
+}
+
+.dropimages a:active{
+    color: white;
+    background-color:#00ace6;
+}
+
+.show{
+    display: block;
+}
+/*style for the top nav menu ends here*/
+
+
+
+
+/*style of the clock */
+#clockbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    margin-top: 100px;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 10px;
+    color: brown;
+    width: 350px;
+    border: 2px;
+    background-color: lightgrey;
+    padding: 10px;
+    font-size: 30px;
+}
+
+#clockshow{
+    font-size: 25px;
+    color: blueviolet;
+    background-color: lightblue;
+    padding: 5px 20px;
+    margin-bottom: 5px;
+    font-size: 30px;
+}
+
+#buttonbox{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+#revealtime, #hidetime{
+    width: 115px;
+    height: 50px;
+    color: darkorchid;
+    background-color: gold;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+#revealtime:hover{
+    color: yellow;
+    background-color: blue;
+}
+
+#hidetime:hover{
+    color: yellow ;
+    background-color: crimson;
+}
+
+body{
+    background-image: linear-gradient( #b38f00,#ff9933, #ff944d );
+    background-size: cover;
+    background-attachment: fixed;
+}

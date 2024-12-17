@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Show Images</title>
+<link rel="stylesheet" href="showimages.css">
+</head>
+<body>
+
+    <!--here we make the top nav menu-->
+	<section id="navmenu">
+        <nav id="menu">
+           <button id="b-one">Home</button>
+           <button id="b-two" class="dropgames" onclick="showgames()">Games</button>
+           <div id="games" class="smallgames">
+			<a href="../Coinflip/coinindex.html">Flip The Coin</a>
+			<a href="../Dices/index.html">Roll Dices</a>
+            </div>
+			<button id="b-three" class="imgbtn" onclick="showimages()">Images</button>
+            <div id="imchoices" class="dropimages">
+                <a href="index.html">Slider Show</a>
+                <a href="../Image Gallery/index.html">Show Gallery</a>
+            </div>
+           <button id="b-four" class="drop" onclick="showmenu()">Timers</button>
+           <div id="choices" class="dropchoices">
+            <a href="../Clock - Current Hour/index.html">Current Timer</a>
+            <a href="../Clock - Specific Hour/index.html">Specific Hour</a>
+           </div>
+
+        </nav>
+    </section>
+	<!--top nav menu ends here-->
+
+
+
+	<!--this div will be a box that will contain the 4 pics -->
+<div id="picbox">
+	<!--we place on this box 3 different boxes, each will have a pic with this format: -->
+		<!--1st box: -->
+	  <div class="box fade">
+			<div class="firstpic" id="picone"></div>
+			<img src="pic1.jpg" alt="picture1" style="width: 100%; border: 5px solid #000066" onclick="revealtextone()">
+		    <div class="textone">1/4</div>
+	  </div>
+	  <div class="box fade">
+		    <div class="secondpic" id="pictwo"></div>
+		    <img src="pic2.jpg" alt="picture2" style="width: 100%; border: 5px solid #6666ff" onclick="revealtexttwo()">
+		    <div class="texttwo">2/4</div>
+	   </div>
+	<div class="box fade">
+		    <div class="thirdpic" id="picthree"></div>
+		    <img src="pic3.jpg" alt="picture3"  style="width: 100%; border: 5px solid #ffa64d" onclick="revealtextthree()">
+		    <div class="textthree">3/4</div>
+    </div>
+   <div class="box fade">
+	        <div class="fourthpic" id="picfour"></div>
+		    <img src="pic4.jpg" alt="picture4"  style="width: 100%; border: 5px solid #e6b3cc" onclick="revealtextfour()">
+		    <div class="textfour">4/4</div>
+	</div>
+	<!--here we make the previous and next buttons and then we close the div picbox -->
+	<a class="previous" onClick="gotopic(-1)">&#10094;</a>
+	<a class="next" onClick="gotopic(1)">&#10095;</a>
+    </div>
+	<br>
+	<!--here we make 3 dots -->
+	
+	<div style="text-align: center"> 
+		<span class="dot active" onClick="currentpic(1)"></span>
+		<span class="dot active" onClick="currentpic(2)"></span>
+		<span class="dot active" onClick="currentpic(3)"></span>
+		<span class="dot active" onClick="currentpic(4)"></span>
+	</div>
+
+	<script src="imagefunction.js"></script>
+</body>
+</html>
