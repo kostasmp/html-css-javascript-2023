@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date Formatter</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Indie+Flower&family=Playwrite+BE+WAL:wght@100..400&family=Playwrite+NL+Guides&family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <div id="togglebtn">
+            <label class="switch" id="switchbtn">
+            <input type="checkbox" onclick="toggleMode()">
+            <span class="slider"></span>
+            </label>
+        </div>
+        <div id="maincontainer">
+        <h1 class="txt">Date Formatter</h1>
+        <br>
+        <p id="desc" class="txt">Choose a format in which you want<br> to see the current date.</p>
+        <div class="line line1"></div>
+        <div class="date-container">
+            <select name="date-choices" id="date-choices">
+                <option value="YYYY-MM-DD">Year, Month, Day</option>
+                <option value="MM/DD/YYYY">Month, Day, Year</option>
+                <option value="DD/MM/YYYY">Day, Month, Year</option>
+                <option value="Short Month Date">Short Date with Month Name</option>
+                <option value="Full Date Format">Full Date Format</option>
+            </select>
+        </div>
+        <p id="display-date" class="txt"></p>
+        <div class="line line2"></div>
+        <p id="display-time" class="txt"></p>
+      </div>
+        <script src="datescript.js"></script>
+        <script src="modetoggle.js"></script>
+    </body>
+</html>

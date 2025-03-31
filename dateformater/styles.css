@@ -1,0 +1,193 @@
+:root{
+   --bodycolorlight1: #189c90;
+   --bodycolorlight2: #7ab08b;
+   --bodycolorlight3: #b4c484;
+   --bodycolorlight4: #e9d87c;
+   --bodycolordark1: #000a39;
+   --bodycolordark2: #562c50;
+   --bodycolordark3: #a15167;
+   --bodycolordark4: #f17a7d;
+   --txtcolorlight: #242124;
+   --txtcolordark: #F8F8FF;
+   --linecolorlight: #696969;
+   --linecolordark: #FFFAF0;
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: linear-gradient(25deg, var(--bodycolorlight1), var(--bodycolorlight2), 
+    var(--bodycolorlight3), var(--bodycolorlight4));
+}
+
+
+.dark-mode{
+    background-image: linear-gradient(25deg, var(--bodycolordark1), var(--bodycolordark2), 
+    var(--bodycolordark3), var(--bodycolordark4));
+}
+
+#maincontainer{
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+  font-family: 'Shadows Into Light Two', cursive;
+  /* font-optical-sizing: auto; */
+   font-weight: 600;
+   font-style: normal;
+   letter-spacing: 5px;
+   position: relative;
+   bottom: 3rem;
+}
+
+#desc{
+  text-align: center;
+  position: relative;
+  bottom: 7.5rem;
+  font-family: 'Dancing Script', cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.8rem;
+}
+
+.line{
+  display: block;
+  width: 100%;
+  border-bottom: 2px dotted var(--linecolorlight);
+}
+
+.line1{
+   position: relative;
+   bottom: 4rem;
+}
+
+.dark-mode .line{
+  border-bottom: 2px dotted var(--linecolordark);
+  transition: 1.5s;
+}
+
+
+.date-container{
+  position: relative;
+  bottom: 9rem;
+}
+
+
+#date-choices{
+  padding: 10px;
+  border-radius: 30px;
+  font-style: italic;
+  border: none;
+}
+
+#date-choices:hover{
+  color: var(--txtcolorlight);
+  background-color: var(--bodycolorlight2);
+}
+
+.dark-mode #date-choices:hover{
+  color: var(--txtcolordark);
+  background-color: var(--bodycolordark3);
+}
+
+.txt{
+    color: var(--txtcolorlight);
+    transition: 1.5s;
+}
+
+.dark-mode .txt{
+    color: var(--txtcolordark);
+    transition: 1.5s;
+}
+
+.line2{
+  margin-top: 2.7%;
+}
+
+#display-date, #display-time{
+  font-family: 'Playwrite BE WAL', cursive;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+
+/* STYLE THE LIGHT-DARK TOGGLE BUTTON */
+
+#togglebtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: relative;
+    top: 20px;
+    right: 20px;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    display: block;
+    --width-of-switch: 3.5em;
+    --height-of-switch: 2em;
+    /* size of sliding icon -- sun and moon */
+    --size-of-icon: 1.4em;
+    /* it is like a inline-padding of switch */
+    --slider-offset: 0.3em;
+    position: relative;
+    width: var(--width-of-switch);
+    height: var(--height-of-switch);
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f4f4f5;
+    transition: .4s;
+    border-radius: 30px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: var(--size-of-icon,1.4em);
+    width: var(--size-of-icon,1.4em);
+    border-radius: 20px;
+    left: var(--slider-offset,0.3em);
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(40deg,#ff0080,#ff8c00 70%);
+    ;
+   transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #303136;
+  }
+  
+  input:checked + .slider:before {
+    left: calc(100% - (var(--size-of-icon,1.4em) + var(--slider-offset,0.3em)));
+    background: #303136;
+    /* change the value of second inset in box-shadow to change the angle and direction of the moon  */
+    box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
+  }
